@@ -9,7 +9,10 @@ Repositório do Projeto de DS II e Química
 29/08/2014
 
 Integrantes: Bruno Silveira, Gabriel Silva, Renan Barreto
+
 Professora: Danielle Vanzin
+
+
 Matéria: Quimica
 
 Funcionalidades: Login de usuários( diferenciado entre administradores e alunos);
