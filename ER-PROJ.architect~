@@ -136,13 +136,13 @@
     </index>
    </folder>
   </table>
-  <table id="TAB36" populated="true" UUID="aedc324e-00c9-4bf3-a343-2d96302dd1c0" name="post_arq" objectType="TABLE" physicalName="post_arq" >
+  <table id="TAB36" populated="true" UUID="aedc324e-00c9-4bf3-a343-2d96302dd1c0" name="arquivos" objectType="TABLE" physicalName="arquivos" >
    <remarks></remarks>
    <folder id="FOLTAB361" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL37" populated="true" UUID="a3cb0bf4-6549-4afc-9427-1d43f1f168c3" autoIncrement="false" autoIncrementSequenceName="post_arq_id_arq_seq" defaultValue="" name="id_arq" nullable="0" physicalName="id_arq" precision="36" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL37" populated="true" UUID="a3cb0bf4-6549-4afc-9427-1d43f1f168c3" autoIncrement="false" autoIncrementSequenceName="arquivo_id_arq_seq" defaultValue="" name="id_arq" nullable="0" physicalName="id_arq" precision="36" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL38" populated="true" UUID="ec45be5a-46a6-49a2-b35b-2274e91038c9" autoIncrement="false" autoIncrementSequenceName="post_arq_id_post_seq" defaultValue="" name="id_post" nullable="0" physicalName="id_post" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL38" populated="true" UUID="ec45be5a-46a6-49a2-b35b-2274e91038c9" autoIncrement="false" autoIncrementSequenceName="postagem_id_post_seq" defaultValue="" name="id_post" nullable="0" physicalName="id_post" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -295,7 +295,7 @@
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="1.0" viewportX="0" viewportY="17" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="464" y="20" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB10" x="832" y="421" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB16" x="796" y="89" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
