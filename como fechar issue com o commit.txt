@@ -1,0 +1,144 @@
+Adicionem o Arquivo:
+
+----C:\Sites\Projeto>git add ER_PDF.pdf
+
+Usem git commit -m "mensagem", dentro de "mensagem" botem o seguinte, Fixes #numerodaissue assim:
+
+----C:\Sites\Projeto>git commit -m "ER inicial Fixes #4"
+-----[master 3c9d061] ER inicial Fixes #4
+----- 1 file changed, 0 insertions(+), 0 deletions(-)
+----- rewrite ER_PDF.pdf (97%)
+
+Deem Push:
+
+C:\Sites\Projeto>git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': RPBarreto
+Password for 'https://RPBarreto@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 179.24 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/RPBarreto/Projeto.git
+   21d8146..3c9d061  master -> master
+
+Git Status:
+
+C:\Sites\Projeto>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ER-PROJ.architect
+        site/app/models/curiosidade.rb
+        site/app/models/elemento.rb
+        site/app/models/postagem.rb
+        site/app/models/usuario.rb
+        site/db/migrate/
+        site/test/fixtures/curiosidades.yml
+        site/test/fixtures/elementos.yml
+        site/test/fixtures/postagems.yml
+        site/test/fixtures/usuarios.yml
+        site/test/models/curiosidade_test.rb
+        site/test/models/elemento_test.rb
+        site/test/models/postagem_test.rb
+        site/test/models/usuario_test.rb
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Novamente, com outro arquivo:
+
+C:\Sites\Projeto>git add ER-PROJ.architect
+
+C:\Sites\Projeto>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   ER-PROJ.architect
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        site/app/models/curiosidade.rb
+        site/app/models/elemento.rb
+        site/app/models/postagem.rb
+        site/app/models/usuario.rb
+        site/db/migrate/
+        site/test/fixtures/curiosidades.yml
+        site/test/fixtures/elementos.yml
+        site/test/fixtures/postagems.yml
+        site/test/fixtures/usuarios.yml
+        site/test/models/curiosidade_test.rb
+        site/test/models/elemento_test.rb
+        site/test/models/postagem_test.rb
+        site/test/models/usuario_test.rb
+
+Fixes #numerodaissue:
+
+C:\Sites\Projeto>git commit -m "ER em .architect Fixes #5"
+[master 4ca7338] ER em .architect Fixes #5
+ 1 file changed, 370 insertions(+)
+ create mode 100644 ER-PROJ.architect
+
+Push:
+
+C:\Sites\Projeto>git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': RPBarreto
+Password for 'https://RPBarreto@github.com':
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 6.05 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/RPBarreto/Projeto.git
+   3c9d061..4ca7338  master -> master
+
+
+prontinho, olhe no site e a issue estara fechada e linkada com o codigo :D 10/10
