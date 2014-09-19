@@ -7,7 +7,4 @@ class CreateCuriosidades < ActiveRecord::Migration
       t.timestamps
     end
   end
-
-   validates :text, :has_many presence :true
-   validates :text, length: {minimum : 10}
 end

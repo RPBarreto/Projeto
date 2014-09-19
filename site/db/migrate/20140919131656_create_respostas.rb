@@ -10,7 +10,4 @@ class CreateRespostas < ActiveRecord::Migration
       t.timestamps
     end
   end
-
-  validates :texto, presence: true
-  validates :texto, length: {minimum : 5}
 end

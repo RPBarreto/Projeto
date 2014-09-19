@@ -6,7 +6,4 @@ class CreateArquivos < ActiveRecord::Migration
       t.timestamps
     end
   end
-
-   validates :descricao, presence :true
-   validates :descricao, length: {minimum : 10}
 end

@@ -8,9 +8,5 @@ class CreatePostagens < ActiveRecord::Migration
 
       t.timestamps
     end
-  end
-
-   validates :text, :arquivos, :has_may, :tipo presence :true
-   validates :text, :arquivos, :tipo length: {minimum : 4}
-   
+  end   
 end
