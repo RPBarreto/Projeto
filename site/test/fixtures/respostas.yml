@@ -3,11 +3,13 @@
 one:
   has_many: MyString
   : 
+  texto: MyString
   has_many: MyString
   : 
 
 two:
   has_many: MyString
   : 
+  texto: MyString
   has_many: MyString
   : 
