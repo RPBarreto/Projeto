@@ -136,13 +136,13 @@
     </index>
    </folder>
   </table>
-  <table id="TAB36" populated="true" UUID="aedc324e-00c9-4bf3-a343-2d96302dd1c0" name="arquivos" objectType="TABLE" physicalName="arquivos" >
+  <table id="TAB36" populated="true" UUID="aedc324e-00c9-4bf3-a343-2d96302dd1c0" name="post_arq" objectType="TABLE" physicalName="post_arq" >
    <remarks></remarks>
    <folder id="FOLTAB361" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL37" populated="true" UUID="a3cb0bf4-6549-4afc-9427-1d43f1f168c3" autoIncrement="false" autoIncrementSequenceName="arquivo_id_arq_seq" defaultValue="" name="id_arq" nullable="0" physicalName="id_arq" precision="36" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL37" populated="true" UUID="a3cb0bf4-6549-4afc-9427-1d43f1f168c3" autoIncrement="false" autoIncrementSequenceName="post_arq_id_arq_seq" defaultValue="" name="id_arq" nullable="0" physicalName="id_arq" precision="36" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL38" populated="true" UUID="ec45be5a-46a6-49a2-b35b-2274e91038c9" autoIncrement="false" autoIncrementSequenceName="postagem_id_post_seq" defaultValue="" name="id_post" nullable="0" physicalName="id_post" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL38" populated="true" UUID="ec45be5a-46a6-49a2-b35b-2274e91038c9" autoIncrement="false" autoIncrementSequenceName="post_arq_id_post_seq" defaultValue="" name="id_post" nullable="0" physicalName="id_post" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -195,7 +195,7 @@
     <column id="COL52" populated="true" UUID="04f15624-162d-47ae-ac66-ebf310c41898" autoIncrement="false" autoIncrementSequenceName="Elemento_num_protons_seq" defaultValue="" name="num_protons" nullable="0" physicalName="num_protons" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL53" populated="true" UUID="373f4a54-c6d2-4d90-a879-c9659631c7ff" autoIncrement="false" autoIncrementSequenceName="Elemento_eletronegatividade_seq" defaultValue="" name="eletronegatividade" nullable="0" physicalName="eletronegatividade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL53" populated="true" UUID="373f4a54-c6d2-4d90-a879-c9659631c7ff" autoIncrement="false" autoIncrementSequenceName="Elemento_eletronegatividade_seq" defaultValue="" name="eletronegatividade" nullable="0" physicalName="eletronegatividade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
      <remarks></remarks>
     </column>
     </folder>
