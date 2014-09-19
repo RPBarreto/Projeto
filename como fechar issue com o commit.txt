@@ -142,3 +142,6 @@ To https://github.com/RPBarreto/Projeto.git
 
 
 prontinho, olhe no site e a issue estara fechada e linkada com o codigo :D 10/10
+
+Edit --- 19/09 ---
+Mais de uma issue pode ser fechada em um commit
