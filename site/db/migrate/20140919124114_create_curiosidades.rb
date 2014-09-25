@@ -1,7 +1,7 @@
 class CreateCuriosidades < ActiveRecord::Migration
   def change
     create_table :curiosidades do |t|
-      t.elementos :has_many
+      t.belongs_to :elemento
       t.string :text
 
       t.timestamps

@@ -11,68 +11,82 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140911202811) do
+ActiveRecord::Schema.define(version: 20140919131656) do
 
   create_table "arquivos", force: true do |t|
-    t.string   "descricao",  limit: 40
+    t.string   "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "curiosidades", force: true do |t|
-    t.string   "text",       limit: 400
+    t.integer  "elemento_id"
+    t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "elementos", force: true do |t|
-    t.string   "nome",               limit: 30
+    t.string   "nome",               limit: 20
     t.integer  "num_eletrons"
     t.integer  "num_neutrons"
     t.integer  "num_protons"
-    t.integer  "eletronegatividade"
+    t.float    "eletronegatividade"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "postagems", force: true do |t|
-    t.string   "text",       limit: 400
+  create_table "post_arquivos", force: true do |t|
+    t.integer  "arquivo_id"
+    t.integer  "postagem_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "postagens", force: true do |t|
+    t.string   "text"
     t.string   "arquivos"
-    t.string   "tipo",       limit: 1
+    t.integer  "usuario_id"
+    t.string   "tipo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "resposta", force: true do |t|
-    t.integer  "post",       limit: 12
-    t.string   "texto",      limit: 400
-    t.string   "autor"
+  create_table "respostas", force: true do |t|
+    t.string   "texto"
+    t.integer  "postagem_id"
+    t.integer  "usuario_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "turma_usuarios", force: true do |t|
+    t.integer  "usuario_id"
+    t.integer  "turma_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "turmas", force: true do |t|
-    t.string   "ano",        limit: 50
+    t.string   "ano"
+    t.string   "curso"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "usuarios", force: true do |t|
-    t.string   "username",   limit: 15
+    t.string   "username",   limit: 50
     t.string   "Nome",       limit: 100
-    t.string   "senha",      limit: 20
-    t.integer  "CPF",        limit: 11
+    t.string   "senha",      limit: 16
+    t.integer  "id_turma"
     t.string   "permissoes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "visibilidades", force: true do |t|
+    t.integer  "postagem_id"
+    t.integer  "turma_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

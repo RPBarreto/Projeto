@@ -1,10 +1,8 @@
 class CreateVisibilidades < ActiveRecord::Migration
   def change
     create_table :visibilidades do |t|
-      t.string :has_many
-      t.postagem :
-      t.string :has_many
-      t.turma :
+      t.belongs_to :postagem
+      t.belongs_to :turma
 
       t.timestamps
     end
