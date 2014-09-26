@@ -13,8 +13,12 @@ class CadastrosController < ApplicationController
 		@cadastro.Nome = params[:nome]
 		@cadastro.username = params[:login]
 		@cadastro.senha = params[:senha]
-		@cadastro.save
+		@cadastro.permissoes= "usuario"
+		@cadastro.save()
+
 		redirect_to :login_index
+		p "testando"
+		p Usuario.all
 	end
 
 

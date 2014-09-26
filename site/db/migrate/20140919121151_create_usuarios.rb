@@ -4,7 +4,6 @@ class CreateUsuarios < ActiveRecord::Migration
       t.string :username, limit: 50
       t.string :Nome, limit: 100
       t.string :senha, limit: 16
-      t.integer :id_turma
       t.string :permissoes
 
       t.timestamps
