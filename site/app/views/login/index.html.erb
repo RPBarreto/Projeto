@@ -1,0 +1,25 @@
+<h2>Login</h2>
+
+<%= form_for @login do |f| %>
+
+	<%= f.label 'Login' %>
+	<br>
+
+	<%= f.text_field :login %>
+	<br>
+
+	<%= f.label 'Senha' %>
+	<br>
+
+	<%= f.password_field :senha %>
+	<br>
+
+	<%= f.submit 'Logar!' %>
+
+	<%= f.submit 'Cadastrar Novo Usuario' %>
+
+	<%= f.submit 'Entrar como convidado' %>
+
+
+
+<% end %>

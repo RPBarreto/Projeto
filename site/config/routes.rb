@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  get 'login/login'
+  get 'login/index'
+
+ post 'login/index'  
+
+ post 'cadastros/new'  
+
 
 resources :cadastros
+
 
 get 'principal/index'
   
