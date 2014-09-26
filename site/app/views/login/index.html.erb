@@ -1,25 +1,9 @@
 <h2>Login</h2>
 
-<%= form_for @login do |f| %>
-
-	<%= f.label 'Login' %>
-	<br>
-
-	<%= f.text_field :login %>
-	<br>
-
-	<%= f.label 'Senha' %>
-	<br>
-
-	<%= f.password_field :senha %>
-	<br>
-
-	<%= f.submit 'Logar!' %>
-
-	<%= f.submit 'Cadastrar Novo Usuario' %>
-
-	<%= f.submit 'Entrar como convidado' %>
-
-
-
-<% end %>
+<form method="post" action="logar">
+<label>Usuario</label><input type="text" name="login"><br>
+<label>Senha</label><input type="password" name="senha"><br><br>
+<input type="submit" value="Logar">
+<input type="button" value="Cadastrar Novo" onclick = "<%= :cadastros_new %>">
+<input type="button" value="Convidado" onclick = "<%= :principal_new %>">
+</form>

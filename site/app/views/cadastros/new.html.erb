@@ -1,27 +1,9 @@
 <h2>Cadastro de Aluno</h2>
 
-<%= form_for @cadastro do |f| %>
 
-	<%= f.label 'Nome' %>
-	<br>
-
-	<%= f.text_field :nome %>
-	<br>
-
-	<%= f.label 'Login' %>
-	<br>
-
-	<%= f.text_field :login %>
-	<br>
-
-	<%= f.label 'Senha' %>
-	<br>
-
-	<%= f.password_field :senha %>
-	<br>
-
-	<%= f.submit 'Cadastrar' %>
-
-
-
-<% end %>
+<form method="post" action="create">
+<label>Nome: </label><input type="text" name="nome"><br>
+<label>Nome de usuario: </label><input type="text" name="login"><br>
+<label>Senha: </label><input type="password" name="senha"><br><br>
+<input type="submit" value="Cadastrar">
+</form>

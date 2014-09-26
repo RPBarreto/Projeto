@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
  post 'login/index'  
 
- post 'cadastros/new'  
+ post 'cadastros/new'
+ post 'cadastros/create'
+ post 'login/logar'  
 
 
 resources :cadastros
