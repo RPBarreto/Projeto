@@ -16,7 +16,7 @@ class CadastrosController < ApplicationController
 		@cadastro.permissoes= "usuario"
 		@cadastro.save()
 
-		redirect_to :login_index
+		redirect_to :login
 		p "testando"
 		p Usuario.all
 	end

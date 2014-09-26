@@ -11,7 +11,7 @@ class LoginController < ApplicationController
 		@logins.each do | l|
 			if (@usuario == l.username and @senha = l.senha)
 				session[:usuario] = @usuario
-				redirect_to :principal_index
+				redirect_to :principal
 			end
 		end
 	end

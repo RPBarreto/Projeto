@@ -1,17 +1,14 @@
 Rails.application.routes.draw do
-  get 'login/index'
-
- post 'login/index'  
-
- post 'cadastros/new'
- post 'cadastros/create'
- post 'login/logar'  
-
 
 resources :cadastros
 
 
-get 'principal/index'
+get 'principal/:tipo' => 'principal#index'
+get 'login' => 'login#index' 
+get 'cadastros' => 'cadastros#index'
+post 'logar' => 'login#logar'
+post 'cadastros/new'
+post 'cadastros/create' 
   
 
   # The priority is based upon order of creation: first created -> highest priority.

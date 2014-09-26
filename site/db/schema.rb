@@ -86,6 +86,7 @@ ActiveRecord::Schema.define(version: 20140926131326) do
     t.string   "username",   limit: 50
     t.string   "Nome",       limit: 100
     t.string   "senha",      limit: 16
+    t.integer  "id_turma"
     t.string   "permissoes"
     t.datetime "created_at"
     t.datetime "updated_at"
