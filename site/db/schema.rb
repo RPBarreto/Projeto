@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926131326) do
+ActiveRecord::Schema.define(version: 20141031014624) do
 
   create_table "arquivos", force: true do |t|
     t.string   "descricao"
@@ -83,11 +83,9 @@ ActiveRecord::Schema.define(version: 20140926131326) do
   end
 
   create_table "usuarios", force: true do |t|
-    t.string   "username",   limit: 50
-    t.string   "Nome",       limit: 100
-    t.string   "senha",      limit: 16
-    t.integer  "id_turma"
-    t.string   "permissoes"
+    t.string   "nome"
+    t.string   "username",   limit: 10
+    t.string   "password",   limit: 32
     t.datetime "created_at"
     t.datetime "updated_at"
   end
