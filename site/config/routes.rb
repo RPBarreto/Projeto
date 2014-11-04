@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
 resources :cadastros
 
-
-get 'principal/:tipo' => 'principal#index'
+root 'principal#index'
+get 'principal' => 'principal#index'
 get 'login' => 'login#index' 
 get 'cadastros' => 'cadastros#index'
 post 'logar' => 'login#logar'
