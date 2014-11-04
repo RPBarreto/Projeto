@@ -11,12 +11,13 @@ Rails.application.routes.draw do
 resources :cadastros
 
 root 'principal#index'
+get 'principal/logout' => 'principal#logout'
 get 'principal' => 'principal#index'
 get 'login' => 'login#index' 
-get 'cadastros' => 'cadastros#index'
+post 'cadastros' => 'usuarios#create'
 post 'logar' => 'login#logar'
-post 'cadastros/new'
-post 'cadastros/create' 
+#post 'cadastros/new'
+#post 'cadastros/create' 
   
 
   # The priority is based upon order of creation: first created -> highest priority.

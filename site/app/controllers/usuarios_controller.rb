@@ -30,7 +30,8 @@ class UsuariosController < ApplicationController
 
     respond_to do |format|
       if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
+        session[:usuario] = @usuario
+        format.html { redirect_to principal_path }
         format.json { render :show, status: :created, location: @usuario }
       else
         format.html { render :new }
