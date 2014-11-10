@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :contacts
+
   get 'login' => 'login#index' , as: :login_form
 
   post 'login/login', as: :login
@@ -7,6 +9,11 @@ Rails.application.routes.draw do
   post 'login/logout', as: :logout
 
   resources :usuarios
+
+
+  
+
+  post 'contacts/new' => 'contacts#new'
 
 resources :cadastros
 
