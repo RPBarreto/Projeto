@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107131209) do
+ActiveRecord::Schema.define(version: 20141121115800) do
 
   create_table "arquivos", force: true do |t|
     t.string   "descricao"
@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(version: 20141107131209) do
     t.string   "password",   limit: 32
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
   end
 
   create_table "visibilidades", force: true do |t|
