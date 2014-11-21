@@ -4,6 +4,9 @@
 	Bem vindo, <%= @usuario %> !<br>
 	<form method='get' action='../principal/logout'>
 		<input type="submit" value = "Logout">
+	</form><br>	
+	<form method='get' action='/usuarios/<%= @id%>'>
+		<input type="submit" value = "Editar">
 	</form>
 </div>
 </div>

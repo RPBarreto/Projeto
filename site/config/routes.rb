@@ -24,8 +24,7 @@ get 'login' => 'login#index'
 post 'cadastros' => 'usuarios#create'
 post 'logar' => 'login#logar'
 get 'tabela' => 'tabela#index'
-#post 'cadastros/new'
-#post 'cadastros/create' 
+get 'usuarios/:id' => 'usuarios#edit'
   
 
   # The priority is based upon order of creation: first created -> highest priority.

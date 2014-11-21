@@ -31,6 +31,7 @@ class UsuariosController < ApplicationController
     respond_to do |format|
       if @usuario.save
         session[:usuario] = @usuario
+        session[:id] = @usuario.id
         format.html { redirect_to principal_path }
         format.json { render :show, status: :created, location: @usuario }
       else

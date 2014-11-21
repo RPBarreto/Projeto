@@ -10,9 +10,8 @@ class LoginController < ApplicationController
   		flash[:error] = 'Nome ou senha invalidos'
   		render :index
   	else
-      p 'aqui'
-      p u.nome
   		session[:usuario] = u.nome
+      session[:id] = u.id
   		redirect_to principal_path, notice: 'Logado com sucesso'
   	end
   end
