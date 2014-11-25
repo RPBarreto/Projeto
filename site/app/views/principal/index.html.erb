@@ -1,33 +1,48 @@
 <% if session[:usuario] != nil %>
+
 <div id = "top" style=" width:100%; height:100px">
 <div = "logout" style = "position:fixed; left:85%; top:10px; text-align:center">
-	Bem vindo, <%= @usuario %> !<br>
+	 <br>
+
+	 <div >
+	<p class="navbar-text">Bem vindo, <b> <%= @usuario %> ! </b> </p>
+	 <br> <br>
+	</div>
 	<form method='get' action='../principal/logout'>
-		<input type="submit" value = "Logout">
+		<button type="submit" class="btn btn-danger">Logout</button>
+		
 	</form><br>	
 	<form method='get' action='/usuarios/<%= @id%>'>
-		<input type="submit" value = "Editar">
+			<button type="submit" class="btn btn-info">Editar</button>
+	
 	</form>
 </div>
 </div>
+
 <div = "lateral" style = "width:15%; height:20%; float:left">
-	<ul>
-		<li>Home</li>
-		<li><a href = "../tabela">Tabela Periódica</a></li>
-		<li><a href = "">Sites das Turmas</a></li>
-		<li><a href = "../contacts/new">Contato Professor</a></li>
-		<li><a href = "">Notas e Frequências</a></li>
-		<li><a href = "">Calendário</a></li>
+	<ul class="list-group">
+		
+		<li class="list-group-item active">Home</li>
+		<li class="list-group-item"><a href = "../tabela">Tabela Periódica</a></li>
+		<li class="list-group-item"><a href = "">Sites das Turmas</a></li>
+		<li class="list-group-item"><a href = "../contacts/new">Contato Professor</a></li>
+		<li class="list-group-item"><a href = "">Notas e Frequências</a></li>
+		<li class="list-group-item"><a href = "">Calendário</a></li>
 	</ul>
 </div>
 <div = "central" style = "text-align:center; width:85%; float:left">
-<center><h2>Home</h2></center><br><br>
-Site online sobre Química para os alunos terem acesso a um novo meio mais interativo de estudo, <br>
-contando com os materiais que serão usados em aula (tabela periódica, listas, provas passadas, etc)<br>
- além de uma área específica para o aluno onde poderá tirar suas dúvidas por meio de perguntas, <br>
- sem precisar do uso do e-mail, bem como saber sua frequência e notas.
 
-<blockquote><i>InfoQuímica</i></blockquote>
+<div class="page-header">
+  <h1>Homepage <small> Professora: Daniela Vanzin</small></h1>
+</div>
+	<div class="jumbotron">
+  <h1>InfoQuímica</h1>
+  <p>Site online sobre Química para os alunos terem acesso a um novo meio mais interativo de estudo, 
+contando com os materiais que serão usados em aula (tabela periódica, listas, provas passadas, etc)
+ além de uma área específica para o aluno onde poderá tirar suas dúvidas por meio de perguntas, 
+ sem precisar do uso do e-mail, bem como saber sua frequência e notas.</p>
+
+</div>
 </div>
 
 <% else %>
@@ -35,27 +50,33 @@ contando com os materiais que serão usados em aula (tabela periódica, listas, 
 <div = "logout" style = "position:fixed; left:85%; top:10px; text-align:center">
 	Bem vindo, Convidado !<br>
 	<form method='get' action='../login'>
-		<input type="submit" value = "Logar">
+<button type="submit" class="btn btn-success">Login</button>
 	</form>
 </div>
 </div>
 <div = "lateral" style = "width:15%; height:20%; float:left">
-	<ul>
-		<li>Home</li>
-		<li><a href = "../tabela">Tabela Periódica</a></li>
-		<li>Sites das Turmas</li>
-		<li><a href = "../contacts/new">Contato Professor</a></li>
-		<li>Notas e Frequências</li>
-		<li>Calendário</li>
+		<ul class="list-group">
+		
+		<li class="list-group-item active">Home</li>
+		<li class="list-group-item"><a href = "../tabela">Tabela Periódica</a></li>
+		<li class="list-group-item"><a href = "">Sites das Turmas</a></li>
+		<li class="list-group-item"><a href = "../contacts/new">Contato Professor</a></li>
+		<li class="list-group-item"><a href = "">Notas e Frequências</a></li>
+		<li class="list-group-item"><a href = "">Calendário</a></li>
 	</ul>
 </div>
 <div = "central" style = "text-align:center; width:85%; float:left">
-<center><h2>Home</h2></center><br><br>
-Site online sobre Química para os alunos terem acesso a um novo meio mais interativo de estudo, <br>
-contando com os materiais que serão usados em aula (tabela periódica, listas, provas passadas, etc)<br>
- além de uma área específica para o aluno onde poderá tirar suas dúvidas por meio de perguntas, <br>
- sem precisar do uso do e-mail, bem como saber sua frequência e notas.
 
-<blockquote><i>InfoQuímica</i></blockquote>
+<div class="page-header">
+  <h1>Homepage <small> Professora: Daniela Vanzin</small></h1>
+</div>
+	<div class="jumbotron">
+  <h1>InfoQuímica</h1>
+  <p>Site online sobre Química para os alunos terem acesso a um novo meio mais interativo de estudo, 
+contando com os materiais que serão usados em aula (tabela periódica, listas, provas passadas, etc)
+ além de uma área específica para o aluno onde poderá tirar suas dúvidas por meio de perguntas, 
+ sem precisar do uso do e-mail, bem como saber sua frequência e notas.</p>
+
+</div>
 </div>
 <% end %>
