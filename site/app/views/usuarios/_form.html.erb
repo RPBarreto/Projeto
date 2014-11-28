@@ -1,3 +1,4 @@
+<div class="jumbotron">
 <%= form_for(@usuario) do |f| %>
   <% if @usuario.errors.any? %>
     <div id="error_explanation">
@@ -27,8 +28,13 @@
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-  <div class="actions">
+ 
 
+  <div class="actions">
+<br>
     <%= f.submit "Criar usuario" %>
+    <br>
   </div>
+  <br>
 <% end %>
+</div>
