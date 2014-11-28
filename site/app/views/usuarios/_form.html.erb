@@ -29,21 +29,10 @@
     <%= f.text_field :email %>
   </div>
   <br>
-  <div>
-
-  <label>Qual sua turma?</label>
-  <br>
-<input id="pa" name="age" type="radio" value="a" />
-<label for="age_child">A | </label>
-<input id="pe>" name="age" type="radio" value="b" />
-<label for="age_adult">B | </label>
-<input id="pa" name="age" type="radio" value="c" />
-<label for="age_child">C | </label>
-<input id="pe>" name="age" type="radio" value="d" />
-<label for="age_adult">D | </label>
-<input id="pa" name="age" type="radio" value="e" />
-<label for="age_child">E</label>
-</div>
+  <div class="field">
+    <%= f.label :turma %><br>
+    <%= f.select :turma,['a', 'b', 'c', 'd', 'e' ] %>
+  </div>
 
 
   <div class="actions">
