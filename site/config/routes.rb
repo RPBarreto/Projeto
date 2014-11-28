@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'calendario/index'
+
+  get 'calendario/ver'
+
   resources :contacts
 
   get 'login' => 'login#index' , as: :login_form
@@ -25,6 +29,7 @@ post 'cadastros' => 'usuarios#create'
 post 'logar' => 'login#logar'
 get 'tabela' => 'tabela#index'
 get 'usuarios/:id' => 'usuarios#edit'
+
   
 
   # The priority is based upon order of creation: first created -> highest priority.
