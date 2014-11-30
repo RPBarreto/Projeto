@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :posts
+
+  get 'posts'=> 'posts#show'
+
   get 'turmas/Index'
 
   get 'calendario/index'
