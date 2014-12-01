@@ -1,15 +1,18 @@
 	<%= form_tag({action: 'login'}, class:'form-signin', method: 'post' ) do %>
+ <h2 class="form-signin-heading">Login</h2>
+	 <div class="jumbotron">
       <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Login</h2>
+       
         <input type="text" name="username" class="form-control" placeholder="Nome de Usuario" required autofocus>
         <input type="password" name="password" class="form-control" placeholder="Senha" required>
     
-             </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-        
-        <% end %>
-        
-        <a href="../usuarios/new"><button class="btn btn-lg btn-primary btn-block">Cadastro</button></a>
+            
 
-   
+        <button class="btn btn-lg btn-success btn-block" type="submit" style= >Logar</button>
+        <br>
 
+		<a href="../usuarios/new"><button class="btn btn-lg btn-info btn-block" >Cadastrar</button></a>
+
+   <% end %>
+
+</div>

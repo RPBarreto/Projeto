@@ -12,6 +12,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @usuario = Usuario.find(session[:id])
+    @id = session[:id]
     @post = Post.find(params[:id])
   end
 
