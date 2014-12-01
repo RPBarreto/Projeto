@@ -13,6 +13,7 @@
           <tr>
             <th>Conteúdo:</th>
             <th>Em:</th>
+            <th>Edit:</th>
           </tr>
         </thead>
         <tbody>
@@ -20,6 +21,9 @@
       <tr>
         <td><%= post.conteudo %></td>
         <td><%= post.data %></td>
+
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       </tr>
     <% end %>
