@@ -27,7 +27,7 @@ class UsuariosController < ApplicationController
   def create
     @usuario = Usuario.new(usuario_params)
     @usuario.password = Digest::MD5.hexdigest(@usuario.password)
-    abort(@usuario.password)
+  
     respond_to do |format|
       if @usuario.save
         session[:usuario] = @usuario
