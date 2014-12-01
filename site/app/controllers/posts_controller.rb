@@ -4,7 +4,9 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    @id = session[:id]
     @posts = Post.all
+    
   end
 
   # GET /posts/1
@@ -25,8 +27,10 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
+    @id = session[:id]
     @post = Post.new(post_params)
     @post.data = DateTime.now()
+    @post.id_usuario = @id
 
     respond_to do |format|
       if @post.save
