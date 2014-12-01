@@ -27,10 +27,9 @@ class UsuariosController < ApplicationController
   def create
     @usuario = Usuario.new(usuario_params)
     @usuario.password = Digest::MD5.hexdigest(@usuario.password)
-    abort(@usuario.password)
     respond_to do |format|
       if @usuario.save
-        session[:usuario] = @usuario
+        session[:usuario] = @usuario.nome
         session[:id] = @usuario.id
         format.html { redirect_to principal_path }
         format.json { render :show, status: :created, location: @usuario }

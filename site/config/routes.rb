@@ -29,6 +29,7 @@ post 'cadastros' => 'usuarios#create'
 post 'logar' => 'login#logar'
 get 'tabela' => 'tabela#index'
 get 'usuarios/:id' => 'usuarios#edit'
+get 'elemento/:element' => 'tabela#elemento'
 
   
 
