@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :posts
+
+  get 'posts'=> 'posts#show'
+
+  get 'turmas/Index'
+
   get 'calendario/index'
 
   get 'calendario/ver'
@@ -29,8 +35,12 @@ post 'cadastros' => 'usuarios#create'
 post 'logar' => 'login#logar'
 get 'tabela' => 'tabela#index'
 get 'usuarios/:id' => 'usuarios#edit'
+<<<<<<< HEAD
 get 'elemento/:element' => 'tabela#elemento'
 
+=======
+get  'turmas' => 'turmas#index'
+>>>>>>> 611c4064bb6db31f7ccba646a28eed3e3207b060
   
 
   # The priority is based upon order of creation: first created -> highest priority.
