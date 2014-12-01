@@ -24,9 +24,5 @@ module Site
 
 config.action_mailer.raise_delivery_errors = true
   end
-<<<<<<< HEAD
-end
-=======
-end
 
->>>>>>> 611c4064bb6db31f7ccba646a28eed3e3207b060
+end
