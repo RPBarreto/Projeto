@@ -4,8 +4,10 @@ one:
   id_post: 1
   conteudo: MyString
   id_usuario: 1
+  data: MyString
 
 two:
   id_post: 1
   conteudo: MyString
   id_usuario: 1
+  data: MyString

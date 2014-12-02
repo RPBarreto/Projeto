@@ -4,6 +4,7 @@ class CreateComentarios < ActiveRecord::Migration
       t.integer :id_post
       t.string :conteudo
       t.integer :id_usuario
+      t.string :data
 
       t.timestamps
     end
