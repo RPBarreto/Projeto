@@ -2,10 +2,10 @@
 
 one:
   id_post: 1
-  conteudo: 
+  conteudo: MyString
   id_usuario: 1
 
 two:
   id_post: 1
-  conteudo: 
+  conteudo: MyString
   id_usuario: 1
