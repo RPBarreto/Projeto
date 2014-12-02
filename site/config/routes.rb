@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :comentarios
+
   resources :posts
 
   get 'posts'=> 'posts#show'
