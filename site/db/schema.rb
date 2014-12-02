@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202180015) do
+ActiveRecord::Schema.define(version: 20141202181615) do
 
   create_table "arquivos", force: true do |t|
     t.string   "descricao"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20141202180015) do
     t.integer  "id_post"
     t.string   "conteudo"
     t.integer  "id_usuario"
+    t.string   "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

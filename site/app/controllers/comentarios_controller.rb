@@ -24,11 +24,14 @@ class ComentariosController < ApplicationController
   # POST /comentarios
   # POST /comentarios.json
   def create
+    @id = session[:id]
     @comentario = Comentario.new(comentario_params)
+    @comentario.data = DateTime.now()
+    @comentario.id_usuario = @id
 
     respond_to do |format|
       if @comentario.save
-        format.html { redirect_to @comentario, notice: 'Comentario was successfully created.' }
+        format.html { redirect_to @comentario, notice: 'Comentario feito com sucesso!' }
         format.json { render :show, status: :created, location: @comentario }
       else
         format.html { render :new }
