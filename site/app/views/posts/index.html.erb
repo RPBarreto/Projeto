@@ -20,7 +20,7 @@
         <tbody>
          <% @posts.each do |post| %>
       <tr>
-        <td><%= post.conteudo %></td>
+        <td><%= post.conteudo.truncate(40) %></td>
         <td><%= post.data.to_s.truncate(16, omission: '') %></td> 
         <% if @id.to_s == post.id_usuario %>
         <td><%= link_to 'Editar', edit_post_path(post) %></td>
