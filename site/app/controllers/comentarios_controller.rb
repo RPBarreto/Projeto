@@ -31,7 +31,7 @@ class ComentariosController < ApplicationController
 
     respond_to do |format|
       if @comentario.save
-        format.html { redirect_to @comentario, notice: 'Comentario feito com sucesso!' }
+        format.html { redirect_to :comentarios, notice: 'Comentario feito com sucesso' }
         format.json { render :show, status: :created, location: @comentario }
       else
         format.html { render :new }
@@ -40,12 +40,13 @@ class ComentariosController < ApplicationController
     end
   end
 
+
   # PATCH/PUT /comentarios/1
   # PATCH/PUT /comentarios/1.json
   def update
     respond_to do |format|
       if @comentario.update(comentario_params)
-        format.html { redirect_to @comentario, notice: 'Comentario was successfully updated.' }
+        format.html { redirect_to :comentarios, notice: 'Comentario was successfully updated.' }
         format.json { render :show, status: :ok, location: @comentario }
       else
         format.html { render :edit }

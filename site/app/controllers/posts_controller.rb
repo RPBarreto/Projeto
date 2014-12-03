@@ -12,9 +12,11 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @comentarios = Comentario.where(id_post: params[:id])
     @usuario = Usuario.find(session[:id])
     @id = session[:id]
     @post = Post.find(params[:id])
+    session[:post] = params[:id]
   end
 
   # GET /posts/new

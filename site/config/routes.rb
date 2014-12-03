@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   resources :posts
 
+
+  post 'posts/:id/comentar' => 'comentarios#criar' 
+
   get 'posts'=> 'posts#show'
 
   get 'turmas/Index'
