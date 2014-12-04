@@ -1,4 +1,4 @@
-<% if session[:usuario] != nil %>
+<% if session[:usuario] != nil or session[:admin] != nil %>
 
 <div id = "top" style=" width:100%; height:100px">
 <div = "logout" style = "position:fixed; left:85%; top:10px; text-align:center">
@@ -12,7 +12,7 @@
 		<button type="submit" class="btn btn-danger">Logout</button>
 		
 	</form><br>	
-	<form method='get' action='/usuarios/<%= @id%>'>
+	<form method='get' action='/usuarios/<%=@id%>'>
 			<button type="submit" class="btn btn-info">Editar</button>
 	
 	</form>

@@ -10,13 +10,20 @@ class LoginController < ApplicationController
   		flash[:error] = 'Nome ou senha invalidos'
   		render :index
   	else
-      session[:turma] = u.turma
-  		session[:usuario] = u.nome
-      session[:id] = u.id
-  		redirect_to principal_path, notice: 'Logado com sucesso'
+      if u.username == "admin"
+        session[:admin] = u.username
+        redirect_to principal_path, notice: 'Logado com sucesso admin'
+      else
+        session[:turma] = u.turma
+    		session[:usuario] = u.nome
+        session[:id] = u.id
+    		redirect_to principal_path, notice: 'Logado com sucesso'
+      end
   	end
   end
 
   def logout
+    reset_session
+    redirect_to '/'
   end
 end

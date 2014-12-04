@@ -31,7 +31,7 @@ class ComentariosController < ApplicationController
 
     respond_to do |format|
       if @comentario.save
-        format.html { redirect_to :comentarios, notice: 'Comentario feito com sucesso' }
+        format.html { redirect_to "http://localhost:3000/posts/#{@comentario.id_post}", notice: 'Comentario feito com sucesso' }
         format.json { render :show, status: :created, location: @comentario }
       else
         format.html { render :new }

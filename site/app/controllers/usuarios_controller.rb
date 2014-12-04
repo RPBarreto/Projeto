@@ -11,6 +11,11 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1
   # GET /usuarios/1.json
   def show
+    @usuario = Usuario.find(params[:id])
+    usr = @usuario.id 
+    if usr!=session[:id]
+      redirect_to '/erro' and return
+    end
   end
 
   # GET /usuarios/new
@@ -20,6 +25,10 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/1/edit
   def edit
+    @aluno = Aluno.find(params[:id])
+    if not session[:usuario] && @aluno.matricula==session[:usuario]
+      redirect_to root_path
+    end
   end
 
   # POST /usuarios

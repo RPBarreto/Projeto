@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :posts
 
 
+  get '/perfil' => 'usuarios#edit'
+
   post 'posts/:id/comentar' => 'comentarios#criar' 
 
   get 'posts'=> 'posts#show'
