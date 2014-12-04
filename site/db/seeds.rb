@@ -13,3 +13,9 @@ elemento_list = [
 elemento_list.each do |nome, num_eletrons, num_neutrons, num_protons, eletronegatividade|
 	Elemento.create(nome: nome, num_eletrons: num_eletrons, num_neutrons: num_neutrons, num_protons: num_protons, eletronegatividade: eletronegatividade)
 end
+
+u = Usuario.new
+u.username = "admin"
+u.password  = Digest::MD5.hexdigest("dani")
+u.nome = "admin"
+u.save

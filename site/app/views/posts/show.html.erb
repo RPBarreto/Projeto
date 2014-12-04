@@ -53,7 +53,9 @@
 </textarea>
   </div>
 
-<input type='hidden' name='comentario[id_post]' value'<%=@post.id%>'>
+<input type='hidden' name='comentario[id_post]' value='<%=@post.id%>'>
+
+<% puts @post.id%>
   <div class="actions">
     <input name="commit" type="submit" value="Create Comentario" />
   </div>
