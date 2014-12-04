@@ -5,6 +5,12 @@ class UsuariosController < ApplicationController
   # GET /usuarios
   # GET /usuarios.json
   def index
+     if session[:usuario].nil? and session[:admin].nil?
+        redirect_to 'localhost:3000/'
+     end 
+     if session[:usuario]
+        redirect_to 'localhost:3000/'
+     end
     @usuarios = Usuario.all
   end
 
@@ -16,6 +22,9 @@ class UsuariosController < ApplicationController
     if usr!=session[:id]
       redirect_to '/erro' and return
     end
+      if session[:usuario].nil? and session[:admin].nil?
+        redirect_to 'localhost:3000/'
+     end 
   end
 
   # GET /usuarios/new
@@ -26,9 +35,9 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1/edit
   def edit
     @aluno = Aluno.find(params[:id])
-    if not session[:usuario] && @aluno.matricula==session[:usuario]
-      redirect_to root_path
-    end
+     if session[:usuario].nil? and session[:admin].nil?
+        redirect_to 'localhost:3000/'
+     end 
   end
 
   # POST /usuarios

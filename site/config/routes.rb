@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'erro' => 'erro#index'
+
   resources :comentarios
 
   resources :posts
 
 
-  get '/perfil' => 'usuarios#edit'
+  get 'perfil' => 'usuarios#edit'
 
   post 'posts/:id/comentar' => 'comentarios#criar' 
 
