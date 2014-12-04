@@ -1,10 +1,10 @@
 class NotasController < ApplicationController
+
   def index
+  	if session[:id].nil?
+  	redirect_to '/erro' 
+  end
   end
 
-  def nota
-  end
 
-  def frenquencia
-  end
 end
