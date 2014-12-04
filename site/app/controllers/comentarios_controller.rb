@@ -24,10 +24,11 @@ class ComentariosController < ApplicationController
   # POST /comentarios
   # POST /comentarios.json
   def create
-    @id = session[:id]
     @comentario = Comentario.new(comentario_params)
     @comentario.data = DateTime.now()
-    @comentario.id_usuario = @id
+    @comentario.id_usuario = session[:id]
+    puts @comentario.id_usuario
+
 
     respond_to do |format|
       if @comentario.save

@@ -1,0 +1,2 @@
+module ErroHelper
+end
