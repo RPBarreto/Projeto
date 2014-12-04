@@ -1,10 +1,10 @@
 class Usuario < ActiveRecord::Base
-	
+
 	validates :nome, :username, :password, presence: true
-	validates :username, length: {maximun: 16}
-	validates :password, length: {maximun: 32}
-	validates :username, length: {minimun: 6}
-	validates :username, length: {maximun: 6}
+	validates :username, length: {maximum: 16}
+	validates :password, length: {maximum: 32}
+	validates :username, length: {minimum: 3}
+	validates :username, length: {maximum: 6}
 
 	
 end
