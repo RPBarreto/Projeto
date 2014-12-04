@@ -1,15 +1,15 @@
 <body>
-	<h1><%= @elemento.nome %></h1>
-	Elétrons: <%= @elemento.num_eletrons %>
-	<br>	
-	Neutrons: <%= @elemento.num_neutrons %>
-	<br>
-	Prótons: <%= @elemento.num_protons %>
-	<br>
-	Massa atômica: <%= @massa %>
-	<br>
-	Eletronegatividade: <%= @elemento.eletronegatividade %>
-	<br>
-	<%= @curiosidade.text %>
+	<p class="text-center">
+		<h1><%= @elemento.nome %></h1>
+	</p>
+	<p class="text-left">
+		<ul class="list-group">
+	  		<li>Elétrons: <%= @elemento.num_eletrons %></li>
+	  		<li>Neutrons: <%= @elemento.num_neutrons %></li>
+	  		<li>Prótons: <%= @elemento.num_protons %></li>
+	  		<li>Massa atômica: <%= @massa %></li>
+	  		<li>Eletronegatividade: <%= @elemento.eletronegatividade %></li>
+		</ul>
+	</p>
 	<%= link_to 'Voltar', tabela_path %>	
 </body>
