@@ -111,7 +111,7 @@ ActiveRecord::Schema.define(version: 20141202181615) do
 
   create_table "usuarios", force: true do |t|
     t.string   "nome"
-    t.string   "username",   limit: 10
+    t.string   "username",   limit: 16
     t.string   "password",   limit: 32
     t.datetime "created_at"
     t.datetime "updated_at"
