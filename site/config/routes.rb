@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'notas' => 'notas#index'
+
+ 
+
   get 'erro' => 'erro#index'
 
   resources :comentarios
