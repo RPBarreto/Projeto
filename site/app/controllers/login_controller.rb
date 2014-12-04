@@ -11,7 +11,7 @@ class LoginController < ApplicationController
   		render :index
   	else
       if u.username == "admin"
-        session[:admin] = true
+        session[:admin] = u.username
         redirect_to principal_path, notice: 'Logado com sucesso admin'
       else
         session[:turma] = u.turma

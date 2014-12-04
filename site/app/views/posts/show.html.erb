@@ -15,13 +15,17 @@
 <br>
 </div>
 
+<strong>Comentarios: </strong>
+<br>
+<br>
+
 <div class="table-responsive">          
       <table class="table">
   <thead>
     <tr>
-      <th>Conteudo</th>
-      <th>Id usuario</th>
-      <th>Data</th>
+      <th>Usuario:</th>
+      <th> </th>
+       <th>Data:</th>
     </tr>
   </thead>
 
@@ -29,13 +33,16 @@
 
   	<% if !@comentarios.empty? %>
     <% @comentarios.each do |comentario| %>
+    <% usuario = Usuario.find(comentario.id_usuario) %>
       <tr>
+        <td><%= usuario.username %>:</td>
         <td><%= comentario.conteudo %></td>
-        <td><%= comentario.id_usuario %></td>
-        <td><%= comentario.data %></td>
+         <td><%= comentario.data.to_s.truncate(16, omission: '') %></td>
+         <% if session[:id] == comentario.id_usuario %>
         <td><%= link_to 'Show', comentario %></td>
         <td><%= link_to 'Edit', edit_comentario_path(comentario) %></td>
         <td><%= link_to 'Destroy', comentario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
        <% end %>
     <% end %>
@@ -57,7 +64,7 @@
 
 <% puts @post.id%>
   <div class="actions">
-    <input name="commit" type="submit" value="Create Comentario" />
+    <input name="commit" type="submit" value="Comentar!" />
   </div>
 </form>
 

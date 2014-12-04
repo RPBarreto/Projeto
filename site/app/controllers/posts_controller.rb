@@ -18,6 +18,7 @@ class PostsController < ApplicationController
     @id = session[:id]
     @post = Post.find(params[:id])
 
+
   end
 
   # GET /posts/new

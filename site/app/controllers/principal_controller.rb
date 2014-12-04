@@ -6,7 +6,7 @@ class PrincipalController < ApplicationController
 	end
 
 	def logout
-		session[:usuario] = nil
+		reset_session
 		redirect_to principal_path
 	end
 
